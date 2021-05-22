@@ -101,6 +101,8 @@ Drink types are separated as **ALCOHOLIC** and **NON_ALCOHOLIC** so when you nee
 
 7. Lombok is as a dependency library in order to reduce boilerplate code in POJO objects.
 
+8. It was used Slf4j for logging to help tracking the application
+
 ## SonarQube
 
 > For code quality was used sonarqube, this application runs sonarqube in a docker making this available on **9000** port. It was based on this internet sample: https://medium.com/trendyol-tech/spring-boot-2-2-6-code-quality-with-sonarqube-8-2-community-70a76634bf75
