@@ -1,1 +1,1 @@
-mvn clean install sonar:sonar
+mvn clean install sonar:sonar -Dsonar.login={HERE_GOES_THE_TOKEN}
