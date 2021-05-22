@@ -60,7 +60,7 @@ mvn test
 ### Main requests
 > After project running you'll be able to access all endpoints through swagger documentation in http://localhost:8080/swagger-ui/
 
-The types of the drink are separated as **ALCOHOLIC** and **NON_ALCOHOLIC** so when you need to informe the type (used as Category) you need to pass exactly one of these types in order to prevent an unexpected exception.
+Drink types are separated as **ALCOHOLIC** and **NON_ALCOHOLIC** so when you need to informe the type (used as Category) you need to pass exactly one of these types in order to prevent an unexpected exception.
 
 <details><summary><b>Body (Click here)</b></summary>
 
