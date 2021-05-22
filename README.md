@@ -26,7 +26,7 @@ git clone https://github.com/jorgeelucas/drink-stock.git
 cd drink-stock
 ```
 
-### Buil
+### Build
 
 Building the project with Maven, use the commands bellow:
 
