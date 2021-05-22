@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "1b8cba5d-3f3f-483d-878d-3dce9554a557",
+		"name": "CI&T",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DRINK",
+			"item": [
+				{
+					"name": "BOOK A DRINK",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"drinkName\": \"heineken\",\n    \"type\": \"ALCOHOLIC\",\n    \"quantity\": 378,\n    \"section\": {\n        \"id\": \"eedc04c6-f71e-4598-af01-cec916c03357\"\n    },\n    \"createdBy\": \"jorge lucas\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/drinks/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"drinks",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL DRINKS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/drinks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"drinks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DRINK BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SECTION",
+			"item": [
+				{
+					"name": "GET AMOUNT PER SECTION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/sections/amount/eedc04c6-f71e-4598-af01-cec916c03357/section",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"sections",
+								"amount",
+								"eedc04c6-f71e-4598-af01-cec916c03357",
+								"section"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET AMOUNT PER TYPE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/sections/amount/alcoholic/type",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"sections",
+								"amount",
+								"alcoholic",
+								"type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL SECTIONS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1da5772a-3a70-465e-8633-e2319183e857",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/sections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET AVAILABLE PER AMOUT AND TYPE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
